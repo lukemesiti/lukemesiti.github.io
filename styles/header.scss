@@ -1,0 +1,159 @@
+$primary-font-color: #040004;
+$link-font-color: #FA023C;
+$borders: #413D3D;
+$hero: #C8FF00;
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-family: georgia,serif;
+    color: $primary-font-color;
+}
+
+a {
+	text-decoration: none;
+	color: $link-font-color;
+}
+
+.container {
+    padding: 0 1.5rem;
+}
+
+.hero {
+    padding-bottom: 1.5rem;
+    /*background-color: $hero;*/
+}
+
+nav {
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+}
+nav .menu {
+  float: right;
+}
+nav .menu li {
+  float: left;
+  padding-left: 0.85em;
+}
+
+.logo {
+  display: inline-block;
+}
+
+p {
+	padding-bottom: 1em;
+    font-style: italic;
+}
+
+.about {
+    padding: 1.5em 1.5em 0 1.5em;
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: 
+
+    li {
+    	display: inline;
+    	font-style: italic;
+    	float: left;
+    }
+}
+
+.work {
+
+	ul {
+		margin: 0 auto;
+	    width: 100%;
+	    max-width: 1250px;
+	    padding: 20px 0;
+	    text-align: left;
+	}
+
+	li {
+		position: relative;
+	    width: 22rem;
+	    height: 23rem;
+	    display: inline-block;
+	    padding: 2.5rem;
+	    margin: 2rem;
+	    border: 5px solid $borders;
+	    float: left;
+		transition: all .2s;
+
+	    &:first-child {
+	    	border: 5px dashed $borders;
+	    }
+
+	    &:hover {
+	    	cursor: pointer;
+	    	background: $borders;
+	    	color: #fff;
+	    	transition: all .2s;
+
+		    &:first-child {
+		    	border: 5px dashed #fff;
+		    }
+
+	    	a {
+	    		bottom: 3.5rem;
+	    		transition: bottom .2s;
+	    	}
+	    }
+
+		span {
+			display: inline-block;
+
+			&:last-child; {
+				position: absolute;
+				bottom: 2.5rem;
+		    	transition: bottom .2s;
+			}
+		}
+
+		.year {
+		    font-size: .8em;
+		    border-bottom: 3px solid $borders;
+		    padding: 0 1rem .5rem 1rem;
+		}
+
+		div {
+			padding-top: 1rem;
+		}
+	}
+}
+
+article {
+
+}
+
+/*.heading {
+	font-family: 'Ubuntu', sans-serif;
+}
+*/
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 3em;
+	font-weight: 300;
+	text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.email {
+	display: inline-block;
+	/*float: left;*/
+	ul {
+		display: inline-block;
+		float: left;
+	}
+}

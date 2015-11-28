@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lukeMesiti</title>
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles/css/clearfix.css">
+	<link rel="stylesheet" type="text/css" href="styles/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/css/header.css">
+	<link rel="stylesheet" href="styles/css/hamburger.css">
+	<link rel="stylesheet" href="styles/css/logo.css">
+	<link rel="stylesheet" href="styles/css/fullScreenMenu.css">
+<!-- 	// <script src="scripts/angular/angular.min.js"></script>
+	// <script src="scripts/angular/angular-route.js"></script>
+	// <script src="scripts/app.js"></script> -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<header class="container hero">
+	<nav class="cf">
+		<div class="logo">
+			<a href="#/">lukeMesiti</a>
+		</div>
+		<ul class="menu">
+			<li><a href="#projects">projects</a></li>
+			<li><a href="#experiments">play</a></li>
+			<li class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+		</ul>
+	</nav>
+</header>
+<div class="container hero">
+	<p class="about">
+		Hi, I'm Luke! I'm a full-stack web developer with experience in IT enterprise environments. At the moment I'm focused on Javascript, jQuery, Angular, web animation, C#, .NET, SQL, RavenDB, HTML5, and CSS3.
+	</p>
+	<p class="about">
+		At the beginning of 2014 I decided to change career from network engineer to web developer. I have since completed the <a target="_blank" href="https://generalassemb.ly/education/web-development-immersive/sydney">Web Development Immersive</a> course at General Assembly in Sydney, worked as a teaching assistent at GA Melbourne's <a target="_blank" href="https://generalassemb.ly/education/front-end-web-development/melbourne">Front-End Web Development</a> class and am now working as a developer at <a target="_blank" href="http://www.praemium.com.au/">Praemium</a> in Melbourne.
+	</p>
+	<div class="about">
+		<div class="email">
+			You can get a hold of me via
+			<a href="http://lukemesiti.com/mailto:lukemesiti@gmail.com">email</a>,
+			<a href="http://www.linkedin.com/pub/luke-mesiti/b/331/2a6"> linkedin</a>, and
+			<a href="https://twitter.com/LukeMesiti"> twitter</a>.
+			Or view some of my repos at <a href="https://github.com/lukemesiti">github</a>
+		</div>
+	</div>
+</div>
+<div class="work projects container">
+	<h1>projects</h1>
+	<ul class="cf">
+		<li>
+				<span class="year">???</span>
+				<div>create something cool with me</div>
+		</li>
+		<li>
+				<a href="">
+					<span class="year">2015</span>
+					<div>My new portfolio site!</div>
+					<span>Thanks for stopping by</span>
+				</a>
+		</li>
+		<li>
+				<span class="year">2015</span>
+				<div>VIS course at GA</div>
+				<span>view final work</span>
+		</li>
+		<li>
+				<a target="_blank" href="http://threethrees.herokuapp.com/">
+				<span class="year">2014</span>
+				<div>threeThrees - A todo list with boundaries</div>
+				<span>visit</span>
+		</li>
+		<li>
+				<a target="_blank" href="http://vice-tracker.herokuapp.com/">
+				<span class="year">2014</span>
+			  <div>viceTracker - Helping you monitor your vices.</div>
+			  <span>visit</span>
+		</li>
+		<li>
+			  <a target="_blank" href="http://autismconnect.herokuapp.com/">
+				<span class="year">2014</span>
+			  <div>autismConnect - An online hub for parents of autistic children.</div>
+			  <span>visit</span>
+		</li>
+	</ul>
+</div>
+<div class="work play container">
+	<h1>play</h1>
+</div>
+
+<div class="overlay">
+	<nav>
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">projects</a></li>
+			<li><a href="#">play</a></li>
+		</ul>
+	</nav>
+</div>
+<script>
+	$(document).ready(function() {
+
+	  var didScroll = false;
+	 
+		$(window).scroll(function() {
+		    didScroll = true;
+		});
+		 
+		setInterval(function() {
+      if ($(window).scrollTop() > 150) {
+      	$('.hamburger').addClass('drop-hamburger');
+  		} else {
+      	$('.hamburger').removeClass('drop-hamburger');
+  		}
+		}, 500);
+
+		$('.hamburger').click(function(){
+			$(this).removeClass('hamburger-hover');
+			$(this).toggleClass('open');
+    	$('.overlay').toggleClass('open');
+		});
+		$('.hamburger').hover(function() {
+			$(this).addClass('hamburger-hover');
+		}, function() {
+			$(this).removeClass('hamburger-hover');
+		});
+	});
+</script>
+</body>
+</html>
