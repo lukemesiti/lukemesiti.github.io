@@ -1,60 +1,135 @@
-/*
-Error: Invalid CSS after "			&:last-child": expected "{", was "; {"
-        on line 116 of styles/header.scss
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-111: 	    }
-112: 
-113: 		span {
-114: 			display: inline-block;
-115: 
-116: 			&:last-child; {
-117: 				position: absolute;
-118: 				bottom: 2.5rem;
-119: 		    	transition: bottom .2s;
-120: 			}
-121: 		}
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-family: georgia,serif;
+  color: #040004;
+}
 
-Backtrace:
-styles/header.scss:116
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/sass:23:in `load'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/sass:23:in `<main>'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+a {
+  text-decoration: none;
+  color: #FA023C;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.hero {
+  padding-bottom: 1.5rem;
+  /*background-color: $hero;*/
+}
+
+nav {
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+nav .menu {
+  float: right;
+}
+
+nav .menu li {
+  float: left;
+  padding-left: 0.85em;
+}
+
+.logo {
+  display: inline-block;
+}
+
+p {
+  padding-bottom: 1em;
+  font-style: italic;
+}
+
+.about {
+  padding: 1.5em 1.5em 0 1.5em;
+  max-width: 770px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: li;
+  background-image-display: inline;
+  background-image-font-style: italic;
+  background-image-float: left;
+}
+
+.work ul {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1250px;
+  padding: 20px 0;
+  text-align: left;
+}
+.work li {
+  position: relative;
+  width: 22rem;
+  height: 23rem;
+  display: inline-block;
+  padding: 2.5rem;
+  margin: 2rem;
+  border: 5px solid #413D3D;
+  float: left;
+  transition: all .2s;
+}
+.work li:first-child {
+  border: 5px dashed #413D3D;
+}
+.work li:hover {
+  cursor: pointer;
+  background: #413D3D;
+  color: #fff;
+  transition: all .2s;
+}
+.work li:hover:first-child {
+  border: 5px dashed #fff;
+}
+.work li:hover a {
+  bottom: 3.5rem;
+  transition: bottom .2s;
+}
+.work li span {
+  display: inline-block;
+}
+.work li span:last-child {
+  position: absolute;
+  bottom: 2.5rem;
+  transition: bottom .2s;
+}
+.work li .year {
+  font-size: .8em;
+  border-bottom: 3px solid #413D3D;
+  padding: 0 1rem .5rem 1rem;
+}
+.work li div {
+  padding-top: 1rem;
+}
+
+/*.heading {
+	font-family: 'Ubuntu', sans-serif;
+}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"			&:last-child\": expected \"{\", was \"; {\"\A         on line 116 of styles/header.scss\A \A 111: 	    }\A 112: \A 113: 		span {\A 114: 			display: inline-block;\A 115: \A 116: 			&:last-child; {\A 117: 				position: absolute;\A 118: 				bottom: 2.5rem;\A 119: 		    	transition: bottom .2s;\A 120: 			}\A 121: 		}"; }
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.email {
+  display: inline-block;
+  /*float: left;*/
+}
+.email ul {
+  display: inline-block;
+  float: left;
+}
