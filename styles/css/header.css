@@ -73,7 +73,6 @@ p {
   width: 22rem;
   height: 23rem;
   display: inline-block;
-  padding: 2.5rem;
   margin: 2rem;
   border: 5px solid #413D3D;
   float: left;
@@ -98,10 +97,19 @@ p {
 .work li span {
   display: inline-block;
 }
+.work li span:nth-child(2n) {
+  display: block;
+}
 .work li span:last-child {
   position: absolute;
   bottom: 2.5rem;
   transition: bottom .2s;
+}
+.work li a {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  padding: 2.5rem;
 }
 .work li .year {
   font-size: .8em;

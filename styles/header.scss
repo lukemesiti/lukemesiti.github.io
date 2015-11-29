@@ -84,7 +84,6 @@ p {
 	    width: 22rem;
 	    height: 23rem;
 	    display: inline-block;
-	    padding: 2.5rem;
 	    margin: 2rem;
 	    border: 5px solid $borders;
 	    float: left;
@@ -113,12 +112,23 @@ p {
 		span {
 			display: inline-block;
 
+      &:nth-child(2n) {
+        display: block;
+      }
+
 			&:last-child {
 				position: absolute;
 				bottom: 2.5rem;
-		    	transition: bottom .2s;
+		    transition: bottom .2s;
 			}
 		}
+
+    a {
+      display: inline-block;
+      position: relative;
+      height: 100%;
+	    padding: 2.5rem;
+    }
 
 		.year {
 		    font-size: .8em;
