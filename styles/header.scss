@@ -60,7 +60,7 @@ p {
     max-width: 770px;
     margin: 0 auto;
     text-align: center;
-    background-image: 
+    background-image:
 
     li {
     	display: inline;
@@ -80,7 +80,7 @@ p {
 	}
 
 	li {
-		position: relative;
+		  position: relative;
 	    width: 22rem;
 	    height: 23rem;
 	    display: inline-block;
@@ -88,7 +88,7 @@ p {
 	    margin: 2rem;
 	    border: 5px solid $borders;
 	    float: left;
-		transition: all .2s;
+		  transition: all .2s;
 
 	    &:first-child {
 	    	border: 5px dashed $borders;
@@ -104,7 +104,7 @@ p {
 		    	border: 5px dashed #fff;
 		    }
 
-	    	a {
+	    	span:last-child {
 	    		bottom: 3.5rem;
 	    		transition: bottom .2s;
 	    	}

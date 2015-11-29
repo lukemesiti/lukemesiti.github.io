@@ -91,7 +91,7 @@ p {
 .work li:hover:first-child {
   border: 5px dashed #fff;
 }
-.work li:hover a {
+.work li:hover span:last-child {
   bottom: 3.5rem;
   transition: bottom .2s;
 }
