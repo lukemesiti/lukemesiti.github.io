@@ -20,7 +20,7 @@
 <header class="container hero">
 	<nav class="cf">
 		<div class="logo">
-			<a href="#/">lukeMesiti</a>
+			<span id="home">lukeMesiti</span>
 		</div>
 		<ul class="menu">
 			<li><a data-scroll href="#projects">projects</a></li>
@@ -96,9 +96,9 @@
 <div class="overlay">
 	<nav>
 		<ul>
-			<li><a href="#">home</a></li>
-			<li><a href="#">projects</a></li>
-			<li><a href="#">play</a></li>
+			<li><a data-scroll href="#home">home</a></li>
+			<li><a data-scroll href="#projects">projects</a></li>
+			<li><a data-scroll href="#play">play</a></li>
 		</ul>
 	</nav>
 </div>
@@ -125,10 +125,16 @@
 			$(this).toggleClass('open');
     	$('.overlay').toggleClass('open');
 		});
+
 		$('.hamburger').hover(function() {
 			$(this).addClass('hamburger-hover');
 		}, function() {
 			$(this).removeClass('hamburger-hover');
+		});
+
+		$('.overlay').click(function() {
+    		$('.overlay').toggleClass('open');
+			$('.hamburger').toggleClass('open');
 		});
 	});
 </script>
