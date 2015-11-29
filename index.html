@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>lukeMesiti</title>
-
-<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700' rel='stylesheet' type='text/css'>
+	
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="styles/css/clearfix.css">
 	<link rel="stylesheet" type="text/css" href="styles/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/css/header.css">
@@ -14,6 +14,7 @@
 	// <script src="scripts/angular/angular-route.js"></script>
 	// <script src="scripts/app.js"></script> -->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
 </head>
 <body>
 <header class="container hero">
@@ -22,8 +23,8 @@
 			<a href="#/">lukeMesiti</a>
 		</div>
 		<ul class="menu">
-			<li><a href="#projects">projects</a></li>
-			<li><a href="#experiments">play</a></li>
+			<li><a data-scroll href="#projects">projects</a></li>
+			<li><a data-scroll href="#play">play</a></li>
 			<li class="hamburger">
 				<span></span>
 				<span></span>
@@ -50,7 +51,7 @@
 	</div>
 </div>
 <div class="work projects container">
-	<h1>projects</h1>
+	<h1 id="projects">projects</h1>
 	<ul class="cf">
 		<li>
 				<span class="year">???</span>
@@ -89,7 +90,7 @@
 	</ul>
 </div>
 <div class="work play container">
-	<h1>play</h1>
+	<h1 id="play">play</h1>
 </div>
 
 <div class="overlay">
@@ -103,6 +104,7 @@
 </div>
 <script>
 	$(document).ready(function() {
+	  smoothScroll.init();
 
 	  var didScroll = false;
 	 
