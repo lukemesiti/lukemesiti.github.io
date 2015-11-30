@@ -4,27 +4,21 @@
 	<title>lukeMesiti</title>
 
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="styles/css/clearfix.css">
 	<link rel="stylesheet" type="text/css" href="styles/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="styles/css/header.css">
-	<link rel="stylesheet" href="styles/css/hamburger.css">
-	<link rel="stylesheet" href="styles/css/logo.css">
-	<link rel="stylesheet" href="styles/css/fullScreenMenu.css">
-<!-- 	// <script src="scripts/angular/angular.min.js"></script>
-	// <script src="scripts/angular/angular-route.js"></script>
-	// <script src="scripts/app.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="styles/css/header.min.css">
+
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
 </head>
 <body>
-<header class="container hero">
+<header>
 	<nav class="cf">
 		<div class="logo">
-			<span id="home">lukeMesiti</span>
+			<h1 id="home">lukeMesiti</h1>
 		</div>
 		<ul class="menu">
-			<li><a data-scroll href="#projects">projects</a></li>
-			<li><a data-scroll href="#play">play</a></li>
+			<li><h1><a data-scroll href="#projects">projects</a></h1></li>
+			<li><h1><a data-scroll href="#play">play</a></h1></li>
 			<li class="hamburger">
 				<span></span>
 				<span></span>
@@ -50,50 +44,62 @@
 		</div>
 	</div>
 </div>
-<div class="work projects container">
-	<h1 id="projects">projects</h1>
-	<ul class="cf">
+<h1 id="projects">projects</h1>
+<div class="projects container">
+	<ul class="card-list cf">
 		<li>
-			<a href="#">
-				<span class="year">???</span>
-				<span>create something cool with me</span>
-				<span>:)</span>
-			</a>
+			<div class="card">
+				<a href="#">
+					<span class="year">???</span>
+					<span>create something cool with me</span>
+					<span>:)</span>
+				</a>
+			</div>
 		</li>
 		<li>
-			<a data-scroll href="#home">
-				<span class="year">2015</span>
-				<span>My new portfolio site!</span>
-				<span>Thanks for stopping by</span>
-			</a>
+			<div class="card">
+				<a data-scroll href="#home">
+					<span class="year">2015</span>
+					<span>My new portfolio site!</span>
+					<span>Thanks for stopping by</span>
+				</a>
+			</div>
 		</li>
 		<li>
-			<a href="#">
-				<span class="year">2015</span>
-				<span>VIS course at GA</span>
-				<span>view final work</span>
-			</a>
+			<div class="card">
+				<a href="#">
+					<span class="year">2015</span>
+					<span>VIS course at GA</span>
+					<span>view final work</span>
+				</a>
+			</div>
 		</li>
 		<li>
-			<a target="_blank" href="http://threethrees.herokuapp.com/">
-				<span class="year">2014</span>
-				<span>threeThrees - A todo list with boundaries</span>
-				<span>visit</span>
-			</a>
+			<div class="card">
+				<a target="_blank" href="http://threethrees.herokuapp.com/">
+					<span class="year">2014</span>
+					<span>threeThrees - A todo list with boundaries</span>
+					<span>visit</span>
+				</a>
+			</div>
 		</li>
 		<li>
-			<a target="_blank" href="http://vice-tracker.herokuapp.com/">
-				<span class="year">2014</span>
-				<span>viceTracker - Helping you monitor your vices.</span>
-				<span>visit</span>
-			</a>
+			<div class="card">
+				<a target="_blank" href="http://vice-tracker.herokuapp.com/">
+					<span class="year">2014</span>
+					<span>viceTracker - Helping you monitor your vices.</span>
+					<span>visit</span>
+				</a>
+			</div>
 		</li>
 		<li>
-			<a target="_blank" href="http://autismconnect.herokuapp.com/">
-				<span class="year">2014</span>
-				<span>autismConnect - An online hub for parents of autistic children.</span>
-				<span>visit</span>
-			</a>
+			<div class="card">
+				<a target="_blank" href="http://autismconnect.herokuapp.com/">
+					<span class="year">2014</span>
+					<span>autismConnect - An online hub for parents of autistic children.</span>
+					<span>visit</span>
+				</a>
+			</div>
 		</li>
 	</ul>
 </div>
@@ -104,9 +110,9 @@
 <div class="overlay">
 	<nav>
 		<ul>
-			<li><a data-scroll href="#home">home</a></li>
-			<li><a data-scroll href="#projects">projects</a></li>
-			<li><a data-scroll href="#play">play</a></li>
+			<li><h1><a data-scroll href="#home">home</a></h1></li>
+			<li><h1><a data-scroll href="#projects">projects</a></h1></li>
+			<li><h1><a data-scroll href="#play">play</a></h1></li>
 		</ul>
 	</nav>
 </div>
