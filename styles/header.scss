@@ -58,6 +58,12 @@ nav {
 }
 nav .menu {
   float: right;
+
+  @media (max-width: 525px) {
+    a {
+      display: none;
+    }
+  }
 }
 nav .menu li {
   float: left;
@@ -95,6 +101,13 @@ h1 {
   font-size: 8vw;
 	font-weight: 300;
 	text-align: center;
+}
+
+// mobile
+@media (max-width: (2 * ($card-min + $gap) - 1px)) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 .email {

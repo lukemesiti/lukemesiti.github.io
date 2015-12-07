@@ -192,7 +192,7 @@
 
 @media (max-width: 659px) {
   .hamburger {
-    right: 0;
+    right: .5rem;
   }
 }
 .hamburger-hover span:nth-child(1) {
@@ -209,6 +209,11 @@
   top: 1.5rem;
 }
 
+@media (max-width: 525px) {
+  .hamburger, .drop-hamburger {
+    top: .5rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -257,6 +262,11 @@ nav {
 nav .menu {
   float: right;
 }
+@media (max-width: 525px) {
+  nav .menu a {
+    display: none;
+  }
+}
 
 nav .menu li {
   float: left;
@@ -294,6 +304,11 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 659px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 .email {
   display: inline-block;
 }

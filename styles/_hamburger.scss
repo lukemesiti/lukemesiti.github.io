@@ -55,7 +55,7 @@
 
  @media (max-width: (2 * ($card-min + $gap) - 1px)) {
    .hamburger {
-     right: 0;
+     right: .5rem;
    }
  }
 
@@ -75,4 +75,10 @@
 .drop-hamburger {
   transition: top 0.5s ease;
   top: 1.5rem;
+}
+
+@media (max-width: 525px) {
+  .hamburger, .drop-hamburger {
+    top: .5rem;
+  }
 }
