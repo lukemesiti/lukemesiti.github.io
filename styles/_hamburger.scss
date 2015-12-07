@@ -8,44 +8,56 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   top: -100px;
-  right: 1.5rem;
+  right: 25px;
   z-index: 1;
   transition: top 0.5s cubic-bezier(0.4, 0, 1, 1);
+
+  span {
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 65px;
+    background: $link-font-color;
+    opacity: 1;
+    right: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  span:nth-child(1) {
+    top: 0px;
+  }
+
+  span:nth-child(2) {
+    top: 18px;
+  }
+
+  span:nth-child(3) {
+    top: 36px;
+  }
+
+
+  &.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+
+  &.open span:nth-child(2) {
+    right: -100px;
+  }
+
+  &.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(45deg);
+  }
 }
 
-.hamburger span {
-  display: block;
-  position: absolute;
-  height: 15px;
-  width: 100%;
-  background: $link-font-color;
-  opacity: 1;
-  right: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
 
-.hamburger span:nth-child(1) {
-  top: 0px;
-
-/*  &:hover {
-    top: -5px;
-    transition: top 0.1s;
-  }*/
-}
-
-.hamburger span:nth-child(2) {
-  top: 18px;
-}
-
-.hamburger span:nth-child(3) {
-  top: 36px;
-
-/*  &:hover {
-    top: 41px;
-    transition: top 0.1s;
-  }*/
-}
+ @media (max-width: (2 * ($card-min + $gap) - 1px)) {
+   .hamburger {
+     right: 0;
+   }
+ }
 
 .hamburger-hover span {
 
@@ -58,21 +70,6 @@
     top: 41px;
     transition: top 0.1s;
   }
-}
-
-.hamburger.open span:nth-child(1) {
-  top: 18px;
-  transform: rotate(-45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  /*opacity: 0;*/
-  right: -100px;
-}
-
-.hamburger.open span:nth-child(3) {
-  top: 18px;
-  transform: rotate(45deg);
 }
 
 .drop-hamburger {
