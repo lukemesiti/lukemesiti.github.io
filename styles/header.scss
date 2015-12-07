@@ -29,6 +29,21 @@ a {
     padding: 4em 1.5rem;
 }
 
+// mobile
+@media (max-width: (2 * ($card-min + $gap) - 1px)) {
+  .container {
+    padding: 2em 0;
+  }
+}
+
+// tablet
+@media (min-width: (2 * ($card-min + $gap)))
+        and (max-width: (3 * ($card-min + $gap) - 1px)) {
+    .container {
+      padding: 2em 1.5em;
+    }
+}
+
 header {
   background-color: #000000;
 

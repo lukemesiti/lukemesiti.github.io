@@ -232,6 +232,16 @@ a {
   padding: 4em 1.5rem;
 }
 
+@media (max-width: 659px) {
+  .container {
+    padding: 2em 0;
+  }
+}
+@media (min-width: 660px) and (max-width: 989px) {
+  .container {
+    padding: 2em 1.5em;
+  }
+}
 header {
   background-color: #000000;
 }
