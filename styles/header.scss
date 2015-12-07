@@ -1,8 +1,8 @@
 @import 'clearfix';
 @import 'variables';
 @import 'cards';
-@import "fullScreenMenu";
-@import "hamburger";
+@import 'fullScreenMenu';
+@import 'hamburger';
 
 *,
 *::before,
@@ -17,6 +17,7 @@ body {
     line-height: 1.6;
     font-family: georgia,serif;
     color: $primary-font-color;
+    background-color: #FAFAFA;
 }
 
 a {
@@ -28,9 +29,12 @@ a {
     padding: 4em 1.5rem;
 }
 
-.hero {
-    // padding-bottom: 1.5rem;
-    /*background-color: $hero;*/
+header {
+  background-color: #000000;
+
+  h1 {
+    color: #ffffff;
+  }
 }
 
 nav {
@@ -43,6 +47,10 @@ nav .menu {
 nav .menu li {
   float: left;
   padding-left: 4vw;
+
+  a {
+    color: #ffffff;
+  }
 }
 
 .logo {
@@ -51,87 +59,20 @@ nav .menu li {
 
 p {
 	padding-bottom: 1em;
-    font-style: italic;
+  font-style: italic;
 }
 
 .about {
-    padding: 1.5em 1.5em 0 1.5em;
+    padding: 0 1.5em 1.5em;
     max-width: 770px;
     margin: 0 auto;
     text-align: center;
-    background-image:
 
     li {
     	display: inline;
     	font-style: italic;
     	float: left;
     }
-}
-
-
-
-.projects {
-  // background-color: #C8FF00;
-  // text-align: center;
-  //
-	// div {
-	// 	  position: relative;
-	//     width: 22rem;
-	//     height: 23rem;
-	//     display: inline-block;
-	//     margin: 1rem;
-	//     border: 5px solid $borders;
-  //     background-color: #FFFFFF;
-	// 	  transition: all .2s;
-  //
-	//     &:first-child {
-	//     	border: 5px dashed $borders;
-	//     }
-  //
-	//     &:hover {
-	//     	cursor: pointer;
-	//     	background: $borders;
-	//     	color: #fff;
-	//     	transition: all .2s;
-  //
-	// 	    &:first-child {
-	// 	    	border: 5px dashed #fff;
-	// 	    }
-  //
-	//     	span:last-child {
-	//     		bottom: 3.5rem;
-	//     		transition: bottom .2s;
-	//     	}
-	//     }
-  //
-	// 	span {
-	// 		display: inline-block;
-  //
-  //     &:nth-child(2n) {
-  //       display: block;
-  //   		padding-top: 1rem;
-  //     }
-  //
-	// 		&:last-child {
-	// 			position: absolute;
-	// 			bottom: 2.5rem;
-	// 	    transition: bottom .2s;
-	// 		}
-	// 	}
-  //
-  //   a {
-  //     display: inline-block;
-  //     position: relative;
-  //     height: 100%;
-	//     padding: 2.5rem;
-  //   }
-  //
-	// 	.year {
-	// 	    font-size: .8em;
-	// 	    border-bottom: 3px solid $borders;
-	// 	    padding: 0 1rem .5rem 1rem;
-	// 	}
-	// }
 }
 
 h1 {
