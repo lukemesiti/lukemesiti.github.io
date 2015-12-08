@@ -17,7 +17,7 @@
     position: absolute;
     height: 15px;
     width: 65px;
-    background: $link-font-color;
+    border: 3px solid #000;
     opacity: 1;
     right: 0;
     transform: rotate(0deg);
@@ -36,6 +36,10 @@
     top: 36px;
   }
 
+  &.open span {
+    background-color: $link-font-color;
+    border: 0;
+  }
 
   &.open span:nth-child(1) {
     top: 18px;
@@ -56,6 +60,10 @@
  @media (max-width: (2 * ($card-min + $gap) - 1px)) {
    .hamburger {
      right: .5rem;
+
+     span {
+       background-color: #ffffff;
+     }
    }
  }
 
