@@ -88,12 +88,6 @@ p {
     max-width: 770px;
     margin: 0 auto;
     text-align: center;
-
-    li {
-    	display: inline;
-    	font-style: italic;
-    	float: left;
-    }
 }
 
 h1 {
@@ -111,9 +105,8 @@ h1 {
 }
 
 .email {
-	display: inline-block;
-	ul {
-		display: inline-block;
-		float: left;
+	display: inline;
+	li {
+		display: inline;
 	}
 }

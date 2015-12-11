@@ -20,6 +20,7 @@
       box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
       background-color: #ffffff;
       position: relative;
+      transition: box-shadow .2s;
 
       span:nth-child(2n) {
         display: block;
@@ -28,6 +29,11 @@
         color: $primary-font-color;
         top: 50%;
         margin-top: -50px;
+      }
+
+      &:hover {
+        box-shadow: 0px 5px 12px 0 rgba(0,0,0,0.2);
+        transition: box-shadow .2s;
       }
     }
 
