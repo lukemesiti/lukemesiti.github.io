@@ -47,7 +47,7 @@
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   position: relative;
-  transition: box-shadow .2s;
+  transition: all .2s;
 }
 .card-list .card span:nth-child(2n) {
   display: block;
@@ -59,7 +59,7 @@
 }
 .card-list .card:hover {
   box-shadow: 0px 5px 12px 0 rgba(0, 0, 0, 0.2);
-  transition: box-shadow .2s;
+  transition: all .2s;
 }
 @media (max-width: 659px) {
   .card-list {
@@ -92,7 +92,6 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom: 0;
-  color: white;
   padding: .5em;
 }
 
@@ -182,7 +181,7 @@
   top: 36px;
 }
 .hamburger.open span {
-  background-color: #EB2341;
+  background-color: #2175B8;
   border: 0;
 }
 .hamburger.open span:nth-child(1) {
@@ -237,12 +236,12 @@ body {
   line-height: 1.6;
   font-family: georgia,serif;
   color: #000000;
-  background-color: #FAFAFA;
+  background-color: #EEE5D8;
 }
 
 a {
   text-decoration: none;
-  color: #EB2341;
+  color: #2175B8;
 }
 
 .container {
@@ -259,13 +258,6 @@ a {
     padding: 2em 1.5em;
   }
 }
-header {
-  background-color: #000000;
-}
-header h1 {
-  color: #ffffff;
-}
-
 nav {
   overflow: hidden;
   font-family: 'Ubuntu', sans-serif;
@@ -284,12 +276,10 @@ nav .menu li {
   display: inline-block;
   padding-left: 4vw;
 }
-nav .menu li a {
-  color: #ffffff;
-}
 
 .logo {
   display: inline-block;
+  background-color: #F9FF00;
 }
 
 p {
@@ -305,9 +295,9 @@ p {
 }
 
 h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 8vw;
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
 }
 
