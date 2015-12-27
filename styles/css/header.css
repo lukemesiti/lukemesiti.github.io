@@ -334,13 +334,13 @@ h1 {
 
 .arrow-red {
   z-index: -2;
-  right: 56%;
+  right: 57%;
   border-right: 8vw solid rgba(255, 55, 55, 0.75);
 }
 
 .arrow-yellow {
   z-index: -3;
-  right: 57%;
+  right: 59%;
   border-right: 8vw solid rgba(255, 255, 49, 0.75);
 }
 
@@ -359,13 +359,13 @@ h1 {
 }
 
 .circle-red {
-  left: 61%;
+  left: 62%;
   z-index: -2;
   background-color: rgba(255, 55, 55, 0.75);
 }
 
 .circle-yellow {
-  left: 62%;
+  left: 64%;
   z-index: -3;
   background-color: rgba(255, 255, 49, 0.75);
 }
