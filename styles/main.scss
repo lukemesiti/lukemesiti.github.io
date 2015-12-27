@@ -1,0 +1,153 @@
+@import 'clearfix';
+@import 'variables';
+@import 'cards';
+@import 'fullScreenMenu';
+@import 'hamburger';
+@import 'shapes';
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-family: georgia,serif;
+    color: $primary-font-color;
+    background-color: #EEE5D8;
+}
+
+a {
+	text-decoration: none;
+	color: $link-font-color;
+  transition: color .2s;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.container {
+    padding: 4em 1.5rem;
+}
+
+#home {
+  position: relative;
+  color: rgba(255, 55, 55, 0.75);
+
+  span:first-child {
+    position: absolute;
+    left: -0.1em;
+    color: rgba(40, 133, 255, 0.75);
+  }
+
+  span:last-child {
+    position: absolute;
+    left: 0.1em;
+    z-index: -1;
+    color: rgba(255, 255, 49, 0.75);
+  }
+}
+
+#projects, #play {
+  position: relative;
+}
+
+nav {
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 0.5em;
+
+  .menu {
+    float: right;
+
+    @media (max-width: $hide-menu-headings) {
+      a {
+        display: none;
+      }
+    }
+
+    li {
+      display: inline-block;
+      padding-left: 4vw;
+    }
+  }
+}
+
+.logo {
+  display: inline-block;
+}
+
+.about {
+    padding: 0 1.5em 1.5em;
+    max-width: $page-max-width;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+  font-size: 8vw;
+	font-weight: 600;
+	text-align: center;
+  letter-spacing: -0.1em;
+}
+
+.email {
+	display: inline;
+  
+	li {
+		display: inline;
+	}
+}
+
+.project {
+  display: block;
+  text-align: center;
+  padding: 2em;
+  max-width: $page-max-width;
+  margin: 0 auto;
+
+  a {
+    margin: 0 auto;
+  }
+
+  span:first-child {
+    color: $primary-font-color;
+  }
+
+  span:last-child {
+    display: block;
+  }
+}
+
+.description {
+  font-size: 1.2em;
+}
+
+small {
+    font-size: .7em;
+}
+
+@media (max-width: $mobile-break-point) {
+  .container {
+    padding: 2em 0;
+  }
+
+  .about {
+    padding: 0 .5em 1.5em;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .project {
+    padding: 1.5em .5em;
+  }
+}
