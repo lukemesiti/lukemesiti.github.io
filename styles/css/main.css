@@ -1,59 +1,371 @@
-/*
-Error: File to import not found or unreadable: cards.
-        on line 3 of styles/main.scss
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
 
-1: @import 'clearfix';
-2: @import 'variables';
-3: @import 'cards';
-4: @import 'fullScreenMenu';
-5: @import 'hamburger';
-6: @import 'shapes';
-7: 
-8: *,
+.cf:after {
+  clear: both;
+}
 
-Backtrace:
-styles/main.scss:3
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:45:in `import'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
-/Users/luke/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/sass:23:in `load'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/sass:23:in `<main>'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
-/Users/luke/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: cards.\A         on line 3 of styles/main.scss\A \A 1: @import 'clearfix';\A 2: @import 'variables';\A 3: @import 'cards';\A 4: @import 'fullScreenMenu';\A 5: @import 'hamburger';\A 6: @import 'shapes';\A 7: \A 8: *,"; }
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(237, 229, 217, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+.overlay.open nav ul {
+  opacity: 1;
+}
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  left: 25%;
+}
+.overlay nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+}
+.overlay nav ul li {
+  display: block;
+  min-height: 54px;
+}
+.overlay h1 {
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .overlay nav {
+    left: 10%;
+  }
+}
+.hamburger {
+  width: 30px;
+  height: 51px;
+  position: fixed;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  top: -100px;
+  right: 25px;
+  z-index: 1;
+  transition: top 0.5s cubic-bezier(0.4, 0, 1, 1);
+}
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 15px;
+  width: 65px;
+  border: 3px solid #000;
+  opacity: 1;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+.hamburger span:nth-child(2) {
+  top: 18px;
+}
+.hamburger span:nth-child(3) {
+  top: 36px;
+}
+.hamburger.open span {
+  background-color: #3F8AEC;
+  border: 0;
+}
+.hamburger.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.hamburger.open span:nth-child(2) {
+  right: -100px;
+}
+.hamburger.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamburger-hover span:nth-child(1) {
+  top: -5px;
+  transition: top 0.1s;
+}
+.hamburger-hover span:nth-child(3) {
+  top: 41px;
+  transition: top 0.1s;
+}
+
+.drop-hamburger {
+  transition: top 0.5s ease;
+  top: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .hamburger, .drop-hamburger {
+    top: .5rem;
+  }
+
+  .hamburger {
+    right: .5rem;
+  }
+}
+.arrow-right {
+  position: absolute;
+  top: 20%;
+  width: 0;
+  height: 0;
+  border-top: 5vw solid transparent;
+  border-bottom: 5vw solid transparent;
+}
+
+.arrow-blue {
+  z-index: -1;
+  right: 55%;
+  border-right: 8vw solid rgba(40, 133, 255, 0.75);
+}
+
+.arrow-red {
+  z-index: -2;
+  right: 57%;
+  border-right: 8vw solid rgba(255, 55, 55, 0.75);
+}
+
+.arrow-yellow {
+  z-index: -3;
+  right: 59%;
+  border-right: 8vw solid rgba(255, 255, 49, 0.75);
+}
+
+.circle {
+  position: absolute;
+  top: 23%;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 75px;
+}
+
+.circle-blue {
+  left: 60%;
+  z-index: -1;
+  background-color: rgba(40, 133, 255, 0.75);
+}
+
+.circle-red {
+  left: 62%;
+  z-index: -2;
+  background-color: rgba(255, 55, 55, 0.75);
+}
+
+.circle-yellow {
+  left: 64%;
+  z-index: -3;
+  background-color: rgba(255, 255, 49, 0.75);
+}
+
+@media (max-width: 900px) {
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle-red {
+    left: 64%;
+  }
+
+  .circle-yellow {
+    left: 68%;
+  }
+
+  .arrow-right {
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+  }
+
+  .arrow-blue {
+    border-right: 72px solid rgba(40, 133, 255, 0.75);
+  }
+
+  .arrow-red {
+    right: 59%;
+    border-right: 72px solid rgba(255, 55, 55, 0.75);
+  }
+
+  .arrow-yellow {
+    right: 63%;
+    border-right: 72px solid rgba(255, 255, 49, 0.75);
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-family: georgia,serif;
+  color: #000000;
+  background-color: #EEE5D8;
+}
+
+a {
+  text-decoration: none;
+  color: #3F8AEC;
+  transition: color .2s;
+}
+a:hover {
+  color: white;
+}
+
+.container {
+  padding: 4em 1.5rem;
+}
+
+#home {
+  position: relative;
+  color: rgba(255, 55, 55, 0.75);
+}
+#home span:first-child {
+  position: absolute;
+  left: -0.1em;
+  color: rgba(40, 133, 255, 0.75);
+}
+#home span:last-child {
+  position: absolute;
+  left: 0.1em;
+  z-index: -1;
+  color: rgba(255, 255, 49, 0.75);
+}
+
+#projects, #play {
+  position: relative;
+}
+
+nav {
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 0.5em;
+}
+nav .menu {
+  float: right;
+}
+@media (max-width: 720px) {
+  nav .menu a {
+    display: none;
+  }
+}
+nav .menu li {
+  display: inline-block;
+  padding-left: 4vw;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.about {
+  padding: 0 1.5em 1.5em;
+  max-width: 770px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8vw;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.1em;
+}
+
+.email {
+  display: inline;
+}
+.email li {
+  display: inline;
+}
+
+.project {
+  display: block;
+  text-align: center;
+  padding: 2em;
+  max-width: 770px;
+  margin: 0 auto;
+}
+.project a {
+  margin: 0 auto;
+}
+.project span:first-child {
+  color: #000000;
+}
+.project span:last-child {
+  display: block;
+}
+
+.description {
+  font-size: 1.2em;
+}
+
+small {
+  font-size: .7em;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 1em 0;
+  }
+
+  .about {
+    padding: 0 .5em 1.5em;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .project {
+    padding: 1.5em .5em;
+  }
+}

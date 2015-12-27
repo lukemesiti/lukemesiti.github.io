@@ -1,6 +1,5 @@
 @import 'clearfix';
 @import 'variables';
-@import 'cards';
 @import 'fullScreenMenu';
 @import 'hamburger';
 @import 'shapes';
@@ -100,7 +99,7 @@ h1 {
 
 .email {
 	display: inline;
-  
+
 	li {
 		display: inline;
 	}
@@ -136,7 +135,7 @@ small {
 
 @media (max-width: $mobile-break-point) {
   .container {
-    padding: 2em 0;
+    padding: 1em 0;
   }
 
   .about {

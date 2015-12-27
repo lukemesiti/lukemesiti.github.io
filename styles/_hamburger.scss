@@ -56,13 +56,6 @@
   }
 }
 
-
- @media (max-width: (2 * ($card-min + $gap) - 1px)) {
-   .hamburger {
-     right: .5rem;
-   }
- }
-
 .hamburger-hover span {
 
   &:nth-child(1) {
@@ -84,5 +77,8 @@
 @media (max-width: $hide-menu-headings) {
   .hamburger, .drop-hamburger {
     top: .5rem;
+  }
+  .hamburger {
+    right: .5rem;
   }
 }
