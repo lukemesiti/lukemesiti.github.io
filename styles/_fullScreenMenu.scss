@@ -45,3 +45,9 @@
 		text-align: left;
 	}
 }
+
+@media (max-width: 500px) {
+	.overlay nav {
+    left: 10%;
+	}
+}
