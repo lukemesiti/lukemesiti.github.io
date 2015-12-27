@@ -204,7 +204,7 @@
   top: 1.5rem;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 755px) {
   .hamburger, .drop-hamburger {
     top: .5rem;
   }
@@ -275,7 +275,7 @@ nav {
 nav .menu {
   float: right;
 }
-@media (max-width: 525px) {
+@media (max-width: 755px) {
   nav .menu a {
     display: none;
   }
