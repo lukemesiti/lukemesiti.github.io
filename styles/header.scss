@@ -29,6 +29,29 @@ a {
     padding: 4em 1.5rem;
 }
 
+#home {
+  position: relative;
+  letter-spacing: -10px;
+  color: rgba(255, 55, 55, 0.75);
+
+  span:first-child {
+    position: absolute;
+    left: -12px;
+    color: rgba(40, 133, 255, 0.75);
+  }
+
+  span:last-child {
+    position: absolute;
+    left: 12px;
+    color: rgba(255, 255, 49, 0.75);
+    z-index: -1;
+  }
+}
+
+#projects, #play {
+  position: relative;
+}
+
 // mobile
 @media (max-width: (2 * ($card-min + $gap) - 1px)) {
   .container {
@@ -47,6 +70,7 @@ a {
 nav {
   overflow: hidden;
   font-family: 'Ubuntu', sans-serif;
+  padding: 0 0.5em;
 }
 nav .menu {
   float: right;
@@ -64,7 +88,6 @@ nav .menu li {
 
 .logo {
   display: inline-block;
-  background-color: #F9FF00;
 }
 
 p {
@@ -84,6 +107,7 @@ h1 {
   font-size: 8vw;
 	font-weight: 700;
 	text-align: center;
+  letter-spacing: -5px;
 }
 
 // mobile
@@ -98,4 +122,28 @@ h1 {
 	li {
 		display: inline;
 	}
+}
+
+.arrow-down {
+  position: absolute;
+  z-index: -1;
+  top: 35%;
+  right: 30%;
+  width: 0;
+  height: 0;
+  border-left: 6vw solid transparent;
+  border-right: 6vw solid transparent;
+  border-top: 9vw solid red;
+}
+
+.arrow-right {
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+  right: 55%;
+	width: 0;
+	height: 0;
+  border-top: 5vw solid transparent;
+  border-bottom: 5vw solid transparent;
+  border-right: 8vw solid red;
 }
