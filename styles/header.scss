@@ -36,18 +36,17 @@ a {
 
 #home {
   position: relative;
-  letter-spacing: -10px;
   color: rgba(255, 55, 55, 0.75);
 
   span:first-child {
     position: absolute;
-    left: -12px;
+    left: -0.1em;
     color: rgba(40, 133, 255, 0.75);
   }
 
   span:last-child {
     position: absolute;
-    left: 12px;
+    left: 0.1em;
     z-index: -1;
     color: rgba(255, 255, 49, 0.75);
   }
@@ -103,19 +102,14 @@ nav .menu li {
     font-style: italic;
 }
 
+
+
 h1 {
 	font-family: 'Open Sans', sans-serif;
   font-size: 8vw;
 	font-weight: 700;
 	text-align: center;
-  letter-spacing: -5px;
-}
-
-// mobile
-@media (max-width: (2 * ($card-min + $gap) - 1px)) {
-  h1 {
-    font-size: 3rem;
-  }
+  letter-spacing: -0.1em;
 }
 
 .email {
@@ -204,4 +198,50 @@ h1 {
 
 small {
     font-size: .7em;
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding: 0 .5em 1.5em;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .project {
+    padding: 1.5em .5em;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle-red {
+    left: 64%;
+  }
+
+  .circle-yellow {
+    left: 68%;
+  }
+
+  .arrow-right {
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+  }
+
+  .arrow-blue {
+    border-right: 72px solid rgba(40, 133, 255, 0.75);
+  }
+
+  .arrow-red {
+    right: 59%;
+    border-right: 72px solid rgba(255, 55, 55, 0.75);
+  }
+
+  .arrow-yellow {
+    right: 63%;
+    border-right: 72px solid rgba(255, 255, 49, 0.75);
+  }
 }
