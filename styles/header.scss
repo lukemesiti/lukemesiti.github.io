@@ -23,6 +23,11 @@ body {
 a {
 	text-decoration: none;
 	color: $link-font-color;
+  transition: color .2s;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .container {
