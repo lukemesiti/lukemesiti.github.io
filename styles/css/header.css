@@ -184,9 +184,6 @@
   .hamburger {
     right: .5rem;
   }
-  .hamburger span {
-    background-color: #ffffff;
-  }
 }
 .hamburger-hover span:nth-child(1) {
   top: -5px;
