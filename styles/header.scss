@@ -43,8 +43,8 @@ a {
   span:last-child {
     position: absolute;
     left: 12px;
-    color: rgba(255, 255, 49, 0.75);
     z-index: -1;
+    color: rgba(255, 255, 49, 0.75);
   }
 }
 
@@ -124,26 +124,83 @@ h1 {
 	}
 }
 
-.arrow-down {
-  position: absolute;
-  z-index: -1;
-  top: 35%;
-  right: 30%;
-  width: 0;
-  height: 0;
-  border-left: 6vw solid transparent;
-  border-right: 6vw solid transparent;
-  border-top: 9vw solid red;
-}
-
 .arrow-right {
   position: absolute;
-  z-index: -1;
   top: 20%;
-  right: 55%;
 	width: 0;
 	height: 0;
   border-top: 5vw solid transparent;
   border-bottom: 5vw solid transparent;
-  border-right: 8vw solid red;
+}
+
+.arrow-blue {
+  z-index: -1;
+  right: 55%;
+  border-right: 8vw solid rgba(40, 133, 255, 0.75);
+}
+
+.arrow-red {
+  z-index: -2;
+  right: 56%;
+  border-right: 8vw solid rgba(255, 55, 55, 0.75);
+}
+
+.arrow-yellow {
+  z-index: -3;
+  right: 57%;
+  border-right: 8vw solid rgba(255, 255, 49, 0.75);
+}
+
+.circle {
+  position: absolute;
+  top: 23%;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 75px;
+}
+
+.circle-blue {
+  left: 60%;
+  z-index: -1;
+  background-color: rgba(40, 133, 255, 0.75);
+}
+
+.circle-red {
+  left: 61%;
+  z-index: -2;
+  background-color: rgba(255, 55, 55, 0.75);
+}
+
+.circle-yellow {
+  left: 62%;
+  z-index: -3;
+  background-color: rgba(255, 255, 49, 0.75);
+}
+
+.project {
+  display: block;
+  text-align: center;
+  padding: 2em;
+  max-width: 770px;
+  margin: 0 auto;
+
+  a {
+    margin: 0 auto;
+  }
+
+  span:first-child {
+    color: $primary-font-color;
+  }
+
+  span:last-child {
+    display: block;
+  }
+}
+
+.description {
+  font-size: 1.4em;
+}
+
+small {
+    font-size: .7em;
 }
