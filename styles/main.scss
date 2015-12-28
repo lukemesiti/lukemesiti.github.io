@@ -34,7 +34,7 @@ a {
     padding: 4em 1.5rem;
 }
 
-#home {
+.luke-mesiti {
   position: relative;
   color: rgba(255, 55, 55, 0.75);
 
@@ -98,7 +98,7 @@ h1 {
   letter-spacing: -0.03em;
   line-height: 1;
 
-  &#home {
+  &.luke-mesiti {
     letter-spacing: -0.1em;
   }
 }
@@ -155,4 +155,12 @@ small {
   .project {
     padding: 1.5em .5em;
   }
+}
+
+img {
+  display: block;
+  width: 1361px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
