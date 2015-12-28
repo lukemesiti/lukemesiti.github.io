@@ -60,6 +60,7 @@ nav {
   overflow: hidden;
   font-family: 'Ubuntu', sans-serif;
   padding: 0 0.5em;
+  overflow: visible;
 
   .menu {
     float: right;
@@ -72,7 +73,7 @@ nav {
 
     li {
       display: inline-block;
-      padding-left: 4vw;
+      line-height: 1;
     }
   }
 }
@@ -91,10 +92,15 @@ nav {
 
 h1 {
 	font-family: 'Open Sans', sans-serif;
-  font-size: 8vw;
+  font-size: 10vw;
 	font-weight: 600;
 	text-align: center;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.03em;
+  line-height: 1;
+
+  &#home {
+    letter-spacing: -0.1em;
+  }
 }
 
 .email {

@@ -20,10 +20,11 @@
 	}
 
 	nav {
-		text-align: center;
-		position: relative;
-		top: 10%;
-		left: 25%;
+		padding: 0;
+		text-align: right;
+    position: relative;
+    top: 3em;
+		right: 25px;
 
 		ul {
 			list-style: none;
@@ -42,12 +43,14 @@
 	}
 
 	h1 {
-		text-align: left;
+		text-align: right;
 	}
 }
 
-@media (max-width: 500px) {
-	.overlay nav {
-    left: 10%;
+@media (max-width: $hide-menu-headings) {
+	.overlay {
+		nav {
+			right: .5rem;
+		}
 	}
 }

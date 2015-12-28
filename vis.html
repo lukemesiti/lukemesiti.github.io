@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lukeMesiti</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" type="text/css" href="styles/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="styles/css/main.min.css">
+
+  	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  	<script src="js/smooth-scroll.min.js"></script>
+  </head>
+  <body>
+    <header>
+    	<nav class="cf">
+    		<div class="logo">
+    			<h1 id="home">lukeMesiti<span>lukeMesiti</span><span>lukeMesiti</span></h1>
+    		</div>
+    		<ul class="menu">
+    			<li><h1><a data-scroll href="#projects">projects</a></h1></li>
+    			<li><h1><a data-scroll href="#play">play</a></h1></li>
+    			<li class="hamburger">
+    				<span></span>
+    				<span></span>
+    				<span></span>
+    			</li>
+    		</ul>
+    	</nav>
+    </header>
+    <div class="container">
+      <img src="img/finalProjectv3.jpg" alt="image of final project" />
+    </div>
+    <div class="overlay">
+    	<nav>
+    		<ul>
+    			<li><h1><a data-scroll href="#home">home</a></h1></li>
+    			<li><h1><a data-scroll href="#projects">projects</a></h1></li>
+    			<li><h1><a data-scroll href="#play">play</a></h1></li>
+    		</ul>
+    	</nav>
+    </div>
+    <script>
+    	$(document).ready(function() {
+    	  smoothScroll.init();
+
+    	  var didScroll = false;
+
+    		$(window).scroll(function() {
+    		    didScroll = true;
+    		});
+
+    		setInterval(function() {
+          if ($(window).scrollTop() > 150) {
+          	$('.hamburger').addClass('drop-hamburger');
+      		} else {
+          	$('.hamburger').removeClass('drop-hamburger');
+      		}
+    		}, 500);
+
+    		$('.hamburger').click(function(){
+    			$(this).removeClass('hamburger-hover');
+    			$(this).toggleClass('open');
+        	$('.overlay').toggleClass('open');
+    		});
+
+    		$('.hamburger').hover(function() {
+    			$(this).addClass('hamburger-hover');
+    		}, function() {
+    			$(this).removeClass('hamburger-hover');
+    		});
+
+    		$('.overlay').click(function() {
+        		$('.overlay').toggleClass('open');
+    			$('.hamburger').toggleClass('open');
+    		});
+    	});
+    </script>
+  </body>
+</html>

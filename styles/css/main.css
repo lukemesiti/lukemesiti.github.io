@@ -47,10 +47,11 @@
   opacity: 1;
 }
 .overlay nav {
-  text-align: center;
+  padding: 0;
+  text-align: right;
   position: relative;
-  top: 10%;
-  left: 25%;
+  top: 3em;
+  right: 25px;
 }
 .overlay nav ul {
   list-style: none;
@@ -66,12 +67,12 @@
   min-height: 54px;
 }
 .overlay h1 {
-  text-align: left;
+  text-align: right;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 730px) {
   .overlay nav {
-    left: 10%;
+    right: .5rem;
   }
 }
 .hamburger {
@@ -140,7 +141,7 @@
   top: 1.5rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .hamburger, .drop-hamburger {
     top: .5rem;
   }
@@ -286,18 +287,19 @@ nav {
   overflow: hidden;
   font-family: 'Ubuntu', sans-serif;
   padding: 0 0.5em;
+  overflow: visible;
 }
 nav .menu {
   float: right;
 }
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   nav .menu a {
     display: none;
   }
 }
 nav .menu li {
   display: inline-block;
-  padding-left: 4vw;
+  line-height: 1;
 }
 
 .logo {
@@ -314,9 +316,13 @@ nav .menu li {
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 8vw;
+  font-size: 10vw;
   font-weight: 600;
   text-align: center;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+h1#home {
   letter-spacing: -0.1em;
 }
 
