@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="styles/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/css/main.min.css">
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
 </head>
 <body>
@@ -113,39 +112,39 @@
 	</nav>
 </div>
 <script>
-	$(document).ready(function() {
+	document.addEventListener("DOMContentLoaded", function() {
 	  smoothScroll.init();
 
-	  var didScroll = false;
-
-		$(window).scroll(function() {
-		    didScroll = true;
-		});
+		var hamburger = document.querySelector('.hamburger');
+		var overlay = document.querySelector('.overlay');
 
 		setInterval(function() {
-      if ($(window).scrollTop() > 150) {
-      	$('.hamburger').addClass('drop-hamburger');
+      if (window.scrollY > 150) {
+				hamburger.classList.add('drop-hamburger');
   		} else {
-      	$('.hamburger').removeClass('drop-hamburger');
+				hamburger.classList.remove('drop-hamburger');
   		}
 		}, 500);
 
-		$('.hamburger').click(function(){
-			$(this).removeClass('hamburger-hover');
-			$(this).toggleClass('open');
-    	$('.overlay').toggleClass('open');
-		});
+		hamburger.addEventListener('click', function(){
+			this.classList.remove('hamburger-hover');
+			this.classList.toggle('open');
+			overlay.classList.toggle('open');
+		}, false);
 
-		$('.hamburger').hover(function() {
-			$(this).addClass('hamburger-hover');
-		}, function() {
-			$(this).removeClass('hamburger-hover');
-		});
+		hamburger.addEventListener('mouseenter', function() {
+			this.classList.add('hamburger-hover');
+		}, false);
 
-		$('.overlay').click(function() {
-    		$('.overlay').toggleClass('open');
-			$('.hamburger').toggleClass('open');
-		});
+		hamburger.addEventListener('mouseleave', function() {
+			this.classList.remove('hamburger-hover');
+		}, false);
+
+		overlay.addEventListener('click', function(event) {
+		    this.classList.toggle('open');
+				hamburger.classList.toggle('open');
+		}, false);
+
 	});
 </script>
 </body>
