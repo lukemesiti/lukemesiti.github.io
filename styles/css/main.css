@@ -333,20 +333,20 @@ h1.luke-mesiti {
   display: inline;
 }
 
-.project {
+.item {
   display: block;
   text-align: center;
   padding: 2em;
   max-width: 770px;
   margin: 0 auto;
 }
-.project a {
+.item a {
   margin: 0 auto;
 }
-.project span:first-child {
+.item span:first-child {
   color: #000000;
 }
-.project span:last-child {
+.item span:last-child {
   display: block;
 }
 
@@ -371,7 +371,7 @@ small {
     font-size: 4.5rem;
   }
 
-  .project {
+  .item {
     padding: 1.5em .5em;
   }
 }
