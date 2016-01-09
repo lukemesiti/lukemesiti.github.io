@@ -34,6 +34,10 @@ a {
     padding: 4em 1.5rem;
 }
 
+.container-small {
+  padding: 1em 1.5rem;
+}
+
 .luke-mesiti {
   position: relative;
   color: rgba(255, 55, 55, 0.75);
@@ -140,7 +144,7 @@ small {
 }
 
 @media (max-width: $mobile-break-point) {
-  .container {
+  .container, .container-small {
     padding: 1em 0;
   }
 
