@@ -12,28 +12,36 @@ describe("Menu", function () {
     return element;
   };
 
-  // var overlay = document.querySelector(".overlay");
-
-  describe("When the user scrolls passed 150px", function () {
-    beforeEach( function () {
-      var scrollEvent = document.createEvent( 'CustomEvent' );
-      scrollEvent.initCustomEvent( 'scroll', false, false, null );
-
-      var expectedLeft = 123;
-      var expectedTop = 456;
-      window.document.body.style.minHeight = '9000px';
-      window.document.body.style.minWidth = '9000px';
-
+  describe("When clicking the hamburger", function () {
       element = injectElement();
 
-      window.scrollTo( expectedLeft, expectedTop );
-      window.dispatchEvent( scrollEvent );
+      element.classList.add("hamburger-hover");
+      element.click()
+    it("will remove the hamburger-hover class", function () {
+      expect(element.classList.contains("drop-hamburger")).toBe(false);
     });
-      // var hamburger = document.querySelector(".hamburger");
-      it("should show the hamburger menu", function () {
-        console.log(window.scrollY);
-        console.log(element);
-        expect(element.classList.contains("drop-hamburger")).toBeTruthy();
-      });
   });
+
+  // describe("When the user scrolls passed 150px", function () {
+  //   beforeEach( function () {
+  //     var scrollEvent = document.createEvent( 'CustomEvent' );
+  //     scrollEvent.initCustomEvent( 'scroll', false, false, null );
+  //
+  //     var expectedLeft = 123;
+  //     var expectedTop = 456;
+  //     window.document.body.style.minHeight = '9000px';
+  //     window.document.body.style.minWidth = '9000px';
+  //
+  //     element = injectElement();
+  //
+  //     window.scrollTo( expectedLeft, expectedTop );
+  //     window.dispatchEvent( scrollEvent );
+  //   });
+  //     // var hamburger = document.querySelector(".hamburger");
+  //     it("should show the hamburger menu", function () {
+  //       console.log(window.scrollY);
+  //       console.log(element);
+  //       expect(element.classList.contains("drop-hamburger")).toBeTruthy();
+  //     });
+  // });
 });
