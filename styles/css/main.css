@@ -149,6 +149,23 @@
   .hamburger {
     right: .5rem;
   }
+  .hamburger span {
+    height: 5px;
+    width: 40px;
+  }
+  .hamburger span:nth-child(1) {
+    top: 8px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 28px;
+  }
+
+  .hamburger-hover span:nth-child(1) {
+    top: 5px;
+  }
+  .hamburger-hover span:nth-child(3) {
+    top: 31px;
+  }
 }
 .separator-arrow {
   position: relative;

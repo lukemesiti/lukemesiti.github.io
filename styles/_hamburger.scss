@@ -78,7 +78,32 @@
   .hamburger, .drop-hamburger {
     top: .5rem;
   }
+
   .hamburger {
     right: .5rem;
+
+    span {
+      height: 5px;
+      width: 40px;
+    }
+
+    span:nth-child(1) {
+      top: 8px;
+    }
+
+    span:nth-child(3) {
+      top: 28px;
+    }
+  }
+
+  .hamburger-hover span {
+
+    &:nth-child(1) {
+      top: 5px;
+    }
+
+    &:nth-child(3) {
+      top: 31px;
+    }
   }
 }
