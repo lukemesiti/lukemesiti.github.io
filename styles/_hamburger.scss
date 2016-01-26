@@ -81,7 +81,11 @@
 
   .hamburger {
     right: .5rem;
+  }
+}
 
+@media (max-width: $mobile-break-point) {
+  .hamburger {
     span {
       height: 5px;
       width: 40px;

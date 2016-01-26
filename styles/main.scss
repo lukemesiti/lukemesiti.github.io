@@ -151,7 +151,19 @@ small {
     font-size: .7em;
 }
 
+img {
+  display: block;
+  width: 1361px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 @media (max-width: $mobile-break-point) {
+  body {
+    font-size: 1.3em;
+  }
+
   .container, .container-small {
     padding: 1em 0;
   }
@@ -169,10 +181,8 @@ small {
   }
 }
 
-img {
-  display: block;
-  width: 1361px;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+@media (max-width: $hide-menu-headings) {
+    body {
+      font-size: 1em;
+    }
 }
