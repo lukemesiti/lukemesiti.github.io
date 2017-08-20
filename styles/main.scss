@@ -1,8 +1,5 @@
 @import 'clearfix';
 @import 'variables';
-@import 'fullScreenMenu';
-@import 'hamburger';
-@import 'shapes';
 
 *,
 *::before,
@@ -33,7 +30,7 @@ a {
 }
 
 .container {
-    padding: 4em 1.5rem;
+    padding: 3.5rem;
 }
 
 .container-small {
