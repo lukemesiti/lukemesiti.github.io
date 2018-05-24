@@ -32,6 +32,11 @@ a {
     border-bottom: .1rem solid black;
 }
 
+a:hover {
+    color: #00C4D0;
+    border-bottom: .1rem solid #00C4D0;
+}
+
 h1 div {
     display: inline-block;
 }
